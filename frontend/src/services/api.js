@@ -8,7 +8,7 @@ export async function fetchHistory() {
 }
 
 export async function sendMessage(message) {
-  const res = await axios.post(`${API_BASE_URL}/chat`, { message });
+  const res = await axios.post(`${API_BASE_URL}/message`, { message });
   return res.data.messages;
 }
 
